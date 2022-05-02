@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contato</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="shortcut icon" href="images/icone.ico" >
+</head>
+<body>
+		<div id="header">
+		<div class="clearfix">
+		<div class="logo">
+				<a href="index.html"><img src="images/llogo.png" alt="LOGO" height="57" width="63"></a>
+			</div>
+			<div id="texto" style="height:0px;width:250px;"> 
+            <font color="#FFFFFF" SIze="5
+           " face="ARIAL">
+
+			GSLJ Soluçoes em software</font>
+			</div>
+			<ul class="navigation">
+				<li>
+					<a href="index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="Sobre.html">Sobre Nós</a>
+				</li>
+				<li>
+					<a href="Equipe.html">Equipe</a>
+				</li>
+				
+				<li>
+					<a href="Software.html">Software</a>
+				</li>
+				
+				<li>
+					<a href="Parceirias.html">Parceirias</a>
+				</li>
+
+				<li class="active">
+					<a href="Contato.html">Contato</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div class="clearfix">
+
+			<div class="main">
+				<h1>Contato</h1>
+				<h2>Nos mande uma pequena mensagem</h2>
+				<p>
+					Nesta mensagem tente colocar criticas contrutivas para que possamos nos auto-avaliar para assim nos desenvolver-nos permitindo mais acesso ainovaçao  e aos interesses de voce o nosso cliente. 
+				</p>
+				<script language="JavaScript">
+				function Validar()
+				{
+					var form = document.getElementById("form");
+					var nome = document.getElementById("txtNome").value;
+					var sobrenome = document.getElementById("txtSobrenome").value;
+					var email = document.getElementById("txtEmail").value;
+					var mensagem = document.getElementById("txtMensagem").value;
+					if(nome === "" && email === "" && mensagem === "")
+					{
+						alert("Todos os campos estao vazios");
+					}
+					else
+					if(nome ==="")
+					{
+						alert("Campo nome esta vazio");
+					}
+					else
+					if(email === "")
+					{
+						alert("Campo Email esta vazio");
+					}
+					else
+					if(mensagem === "")
+					{
+						alert("Campo Mensagem esta vazio");
+					}
+					else
+					{
+						alert("Informaçoes enviadas com sucesso.");
+					}
+				}
+
+</script>
+				<form NAME="frmLogin" id="form" method="post" class="message">
+					<label>Primeiro Nome</label>
+					<input type="text" value="" id="txtNome" name="txtNome">
+					<label>Sobrenome</label>
+					<input type="text" value="" id="txtSobrenome" name="txtSobrenome">
+					<label>Email</label>
+					<input type="text" value="" id="txtEmail" name="txtEmail">
+					<label>Mensagem</label>
+					<textarea id="txtMensagem" name="txtMensagem"></textarea>
+					<input type="button" value="Enviar Mensagem" OnClick="Validar();">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="clearfix">
+			<div class="section contact">
+				<h4>Fale com a gente</h4>
+				<p>
+					<span>Endereco:</span> Etec de Hortolandia
+				</p>
+				<p>
+					<span>Telefone:</span> (+20) 000 222 999
+				</p>
+				<p>
+					<span>Email:</span> info@gslj.com
+				</p>
+			</div>
+		</div>
+		<div id="footnote">
+			<div class="clearfix">
+			<center>	
+				<p>
+					© Copyright 2015 GSLJ Soluções. All Rights Reserved.
+				</p>
+			</center>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>
